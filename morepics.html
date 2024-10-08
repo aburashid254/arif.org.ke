@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Collection with Zoom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+ <!-- Fixed Social Media Navbar -->
+ <div class="bg-gray-800 text-white py-2 fixed w-full z-20 top-0">
+    <div class="container mx-auto text-center">
+        <a href="https://www.facebook.com/profile.php?id=100068330464632" class="text-blue-800 hover:text-blue-600 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://vm.tiktok.com/ZMhM48EB8/" class="hover:text-blue-400 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-tiktok"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B254792810773&context=ARCRg0nPNV4OV5N9YP6QsAy_IiPtEtM10I6hAx0hKrV9u-R4SeWcG9tOlRPqcbysGz8KfWqCLCR8ykI-drGDxEsnV3G6-anVBR4rfFPa9zREYkf8DmMuVPizDV8PlgWucw_z18B6IfNRj5icsxfcwkPxbQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawFw2sFleHRuA2FlbQIxMAABHfY1miq_97ZkhqQ-v3vRzbdgIbzjx7igdl40sqGfFvW7zb8OJIqJeI-epA_aem_JG0zXwGKeznn1hmmhSLFUw" class="text-green-800 hover:text-green-600 transform transition duration-300 hover:scale-110"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aburashid.islamic_foundation?utm_source=qr&igsh=MWpocGNkbjhrbWRoNg==" class="text-pink-800 hover:text-pink-600 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@aburashidislamicfoundation" class="text-red-800 hover:text-red-600 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+
+<!-- Fixed Social Media Navbar -->
+<div class="bg-gray-800 text-white py-2 fixed w-full z-20 top-0">
+    <div class="flex justify-center space-x-4 mt-4">
+        <a href="https://www.facebook.com/profile.php?id=100068330464632" class="text-blue-800 hover:text-blue-600 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://vm.tiktok.com/ZMhM48EB8/" class="hover:text-blue-400 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-tiktok"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=%2B254792810773&context=ARCRg0nPNV4OV5N9YP6QsAy_IiPtEtM10I6hAx0hKrV9u-R4SeWcG9tOlRPqcbysGz8KfWqCLCR8ykI-drGDxEsnV3G6-anVBR4rfFPa9zREYkf8DmMuVPizDV8PlgWucw_z18B6IfNRj5icsxfcwkPxbQ&source=FB_Page&app=facebook&entry_point=page_cta&fbclid=IwY2xjawFw2sFleHRuA2FlbQIxMAABHfY1miq_97ZkhqQ-v3vRzbdgIbzjx7igdl40sqGfFvW7zb8OJIqJeI-epA_aem_JG0zXwGKeznn1hmmhSLFUw" class="text-green-800 hover:text-green-600 transform transition duration-300 hover:scale-110"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/aburashid.islamic_foundation?utm_source=qr&igsh=MWpocGNkbjhrbWRoNg==" class="text-pink-800 hover:text-pink-600 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@aburashidislamicfoundation" class="text-red-800 hover:text-red-600 mx-2 transform transition duration-300 hover:scale-110"><i class="fab fa-youtube"></i></a>
+    </div>
+</div>
+
+<!-- Fixed Main Navbar -->
+<header class="bg-white shadow-md fixed w-full z-10 top-12">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="text-2xl font-bold">
+            <a href="index.html">
+                <img src="5.jpg" alt="Charity Logo" class="h-12 w-12 rounded-full object-cover">
+            </a>
+        </div>
+        <nav class="space-x-6 hidden md:flex"> <!-- Increased spacing between links -->
+            <a href="#about" class="hover:text-blue-600 transform transition duration-300 hover:scale-110"><i class="fas fa-info-circle"></i> About Us</a>
+            <a href="#impact" class="hover:text-blue-600 transform transition duration-300 hover:scale-110"><i class="fas fa-hand-holding-heart"></i> Our Impact</a>
+            <a href="#programs" class="hover:text-blue-600 transform transition duration-300 hover:scale-110"><i class="fas fa-book-open"></i> Programs</a>
+            <a href="#events" class="hover:text-blue-600 transform transition duration-300 hover:scale-110"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="#job-adverts" class="hover:text-blue-600 transform transition duration-300 hover:scale-110"><i class="fas fa-briefcase"></i> Job Adverts</a>
+            <a href="#contact" class="hover:text-blue-600 transform transition duration-300 hover:scale-110"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        <div class="space-x-6 hidden md:flex">
+            <a href="#donate" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transform transition duration-300 hover:scale-110"><i class="fas fa-donate"></i> Donate</a>
+            <a href="#volunteer" class="px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-800 transform transition duration-300 hover:scale-110"><i class="fas fa-user-plus"></i> Volunteer</a>
+        </div>
+        <!-- Modal for Donate -->
+        <div id="donateModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg p-6 w-11/12 md:w-1/3">
+                <h3 class="text-xl font-bold mb-4">Donate</h3>
+                <form>
+                    <div class="mb-4">
+                        <label for="donationAmount" class="block text-sm font-medium text-gray-700">Donation Amount</label>
+                        <input type="number" id="donationAmount" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter amount" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="donorPhone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <input type="tel" id="donorPhone" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="flex justify-end">
+                        <button type="button" id="closeDonateModal" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400" onclick="closeModal('donateModal')">Cancel</button>
+                        <button type="submit" class="ml-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+<!-- Modal for Volunteer -->
+<div id="volunteerModal" class="fixed inset-0 bg-gray-800 bg-opacity-50 flex items-center justify-center z-50 hidden">
+<div class="bg-white rounded-lg p-6 w-11/12 md:w-1/3">
+    <h3 class="text-xl font-bold mb-4">Volunteer</h3>
+    <form>
+        <div class="mb-4">
+            <label for="volunteerName" class="block text-sm font-medium text-gray-700">Name</label>
+            <input type="text" id="volunteerName" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+        </div>
+        <div class="mb-4">
+            <label for="volunteerEmail" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" id="volunteerEmail" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required>
+        </div>
+        <div class="mb-4">
+            <label for="volunteerMessage" class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea id="volunteerMessage" rows="3" class="mt-1 block w-full p-2 border border-gray-300 rounded-md" required></textarea>
+        </div>
+        <div class="flex justify-end">
+            <button type="button" id="closeVolunteerModal" class="px-4 py-2 bg-gray-300 text-gray-700 rounded-md hover:bg-gray-400">Cancel</button>
+            <button type="submit" class="ml-2 px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-700">Submit</button>
+        </div>
+    </form>
+</div>
+</div>
+
+        <!-- Hamburger Menu -->
+        <div class="md:hidden">
+            <button id="menu-btn" class="focus:outline-none" onclick="toggleMenu()">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- Mobile Menu -->
+<div id="menu" class="md:hidden hidden px-4 py-2 bg-white">
+<a href="#about" class="block py-2" onclick="closeMenu()"> <i class="fas fa-info-circle"></i> About Us</a>
+<a href="#impact" class="block py-2" onclick="closeMenu()"> <i class="fas fa-hand-holding-heart"></i> Our Impact</a>
+<a href="#programs" class="block py-2" onclick="closeMenu()"> <i class="fas fa-book-open"></i> Programs</a>
+<a href="#events" class="block py-2" onclick="closeMenu()"> <i class="fas fa-calendar-alt"></i> Events</a>
+<a href="#job-adverts" class="block py-2" onclick="closeMenu()"> <i class="fas fa-briefcase"></i> Job Adverts</a>
+<a href="#contact" class="block py-2" onclick="closeMenu()"> <i class="fas fa-envelope"></i> Contact</a>
+<a href="#donate" class="block py-2" onclick="openForm('donateForm')"> <i class="fas fa-donate"></i> Donate</a>
+<a href="#volunteer" class="block py-2" onclick="openForm('volunteerForm')"> <i class="fas fa-user-plus"></i> Volunteer</a>
+</div>
+
+<!-- Donate Form -->
+<div id="donateForm" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+<div class="bg-white p-4 rounded-lg shadow-lg w-11/12 max-w-md">
+    <h2 class="text-xl font-bold mb-4">Donate</h2>
+    <form>
+        <label class="block mb-2" for="donateAmount">Amount:</label>
+        <input type="number" id="donateAmount" class="border border-gray-300 p-2 w-full rounded mb-4" placeholder="Enter amount" required>
+        
+        <label class="block mb-2" for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" class="border border-gray-300 p-2 w-full rounded mb-4" placeholder="Enter your phone number" required>
+        
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Submit Donation</button>
+        <button type="button" class="mt-2 text-red-500" onclick="closeForm('donateForm')">Cancel</button>
+    </form>
+</div>
+</div>
+
+
+<!-- Volunteer Form -->
+<div id="volunteerForm" class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center hidden">
+<div class="bg-white p-4 rounded-lg shadow-lg w-11/12 max-w-md">
+    <h2 class="text-xl font-bold mb-4">Volunteer</h2>
+    <form>
+        <label class="block mb-2" for="volunteerName">Name:</label>
+        <input type="text" id="volunteerName" class="border border-gray-300 p-2 w-full rounded mb-4" required>
+        <label class="block mb-2" for="volunteerEmail">Email:</label>
+        <input type="email" id="volunteerEmail" class="border border-gray-300 p-2 w-full rounded mb-4" required>
+        <label class="block mb-2" for="volunteerMessage">Message:</label>
+        <textarea id="volunteerMessage" class="border border-gray-300 p-2 w-full rounded mb-4"></textarea>
+        <button type="submit" class="bg-blue-500 text-white p-2 rounded">Submit Application</button>
+        <button type="button" class="mt-2 text-red-500" onclick="closeForm('volunteerForm')">Cancel</button>
+    </form>
+</div>
+</div>
+</header>
+
+
+    <!-- Image Collection Section -->
+    <section id="image-collection" class="py-16 mt-24 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"> <!-- Increased gap for grid items -->
+                <!-- Image Item -->
+                <div class="relative group">
+                    <img src="16.jpg" alt="Collection Image 1" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="17.jpg" alt="Collection Image 2" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="18.jpg" alt="Collection Image 3" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="19.jpg" alt="Collection Image 4" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="20.jpg" alt="Collection Image 5" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="21.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="22.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="23.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="24.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="25.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="26.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="27.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="28.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <div class="relative group">
+                    <img src="29.jpg" alt="Collection Image 6" class="w-full h-48 object-cover rounded-md shadow-lg cursor-pointer transform transition duration-300 hover:scale-110" onclick="openModal(this.src)">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Zooming Image -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden z-50">
+        <div class="relative">
+            <!-- Close Button -->
+            <button class="absolute top-0 right-0 mt-2 mr-2 text-white text-2xl" onclick="closeModal()">
+                &times;
+            </button>
+            <!-- Zoomed Image -->
+            <img id="modalImage" src="" alt="Zoomed Image" class="max-w-full max-h-screen rounded-md shadow-lg">
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-white py-4 mt-16 shadow-md">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-600">&copy; 2024 Your Website. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Modal and Menu -->
+    <script>
+
+         // Show the donate form modal
+        document.getElementById('donateButton').addEventListener('click', function() {
+            document.getElementById('donateModal').classList.remove('hidden');
+        });
+
+        // Close the donate form modal
+        document.getElementById('closeModal').addEventListener('click', function() {
+            document.getElementById('donateModal').classList.add('hidden');
+        });
+
+        // Handle form submission (for demonstration purposes)
+        document.getElementById('donateForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission
+            alert('Thank you for your donation!'); // Replace with actual logic
+            document.getElementById('donateModal').classList.add('hidden'); // Hide modal after submission
+        });
+
+        function openForm(formId) {
+                document.getElementById(formId).classList.remove('hidden');
+            }
+        
+            function closeForm(formId) {
+                document.getElementById(formId).classList.add('hidden');
+            }
+        
+            function closeMenu() {
+                // Your existing close menu logic
+            }
+        
+                // Open Donate Modal
+            document.querySelector('a[href="#donate"]').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                document.getElementById('donateModal').classList.remove('hidden');
+            });
+        
+            // Open Volunteer Modal
+            document.querySelector('a[href="#volunteer"]').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                document.getElementById('volunteerModal').classList.remove('hidden');
+            });
+        
+            // Close Donate Modal
+            document.getElementById('closeDonateModal').addEventListener('click', function() {
+                document.getElementById('donateModal').classList.add('hidden');
+            });
+        
+            // Close Volunteer Modal
+            document.getElementById('closeVolunteerModal').addEventListener('click', function() {
+                document.getElementById('volunteerModal').classList.add('hidden');
+            });
+        
+            // Close modal on clicking outside of the modal
+            window.addEventListener('click', function(event) {
+                if (event.target === document.getElementById('donateModal')) {
+                    document.getElementById('donateModal').classList.add('hidden');
+                }
+                if (event.target === document.getElementById('volunteerModal')) {
+                    document.getElementById('volunteerModal').classList.add('hidden');
+                }
+            });
+        
+                 // Function to open the modal and display the clicked image
+                 function openModal(imageSrc) {
+                    var modal = document.getElementById('imageModal');
+                    var modalImage = document.getElementById('modalImage');
+                    modalImage.src = imageSrc; // Set the modal image source to the clicked image's source
+                    modal.classList.remove('hidden'); // Show the modal
+                }
+        
+                // Function to close the modal
+                function closeModal() {
+                    var modal = document.getElementById('imageModal');
+                    modal.classList.add('hidden'); // Hide the modal
+                }
+        
+                // Function to toggle the mobile menu
+                function toggleMenu() {
+                    var menu = document.getElementById('menu');
+                    menu.classList.toggle('hidden'); // Show/hide the mobile menu
+                }
+        
+                // Function to close the mobile menu after a link is clicked
+                function closeMenu() {
+                    var menu = document.getElementById('menu');
+                    menu.classList.add('hidden'); // Hide the mobile menu
+                }
+        
+        
+                const images = [
+                    "1.jpg",
+                    "2.jpg",
+                    "3.jpg",
+                    "4.jpg",
+                    "5.jpg"
+                ];
+        
+                let currentIndex = 0;
+        
+                const mainImage = document.getElementById('mainImage');
+                const thumbnails = document.querySelectorAll('.thumbnail');
+        
+                const updateImage = (index) => {
+                    mainImage.src = images[index];
+                };
+        
+                thumbnails.forEach((thumbnail, index) => {
+                    thumbnail.addEventListener('click', () => {
+                        currentIndex = index;
+                        updateImage(currentIndex);
+                    });
+                });
+        
+                document.getElementById('prevBtn').addEventListener('click', () => {
+                    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+                    updateImage(currentIndex);
+                });
+        
+                document.getElementById('nextBtn').addEventListener('click', () => {
+                    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+                    updateImage(currentIndex);
+                });
+                function toggleDetails(detailsId, button) {
+        const details = document.getElementById(detailsId);
+        details.classList.toggle('hidden'); // Toggle visibility of the additional text
+
+        // Change button text based on the visibility of the additional text
+        button.textContent = details.classList.contains('hidden') ? 'Read More' : 'Read Less';
+    }
+
+    function toggleReadMore() {
+        const moreText = document.getElementById('moreText');
+        const button = document.getElementById('readMoreBtn');
+        
+        moreText.classList.toggle('hidden'); // Toggle visibility of the additional text
+
+        // Change button text based on the visibility of the additional text
+        button.textContent = moreText.classList.contains('hidden') ? 'Read More' : 'Read Less';
+    }
+
+    function toggleReadMore(textId, button) {
+        const moreText = document.getElementById(textId);
+        moreText.classList.toggle('hidden'); // Toggle visibility of the additional text
+
+        // Change button text based on the visibility of the additional text
+        button.textContent = moreText.classList.contains('hidden') ? 'Read More' : 'Read Less';
+    }
+    </script>
+</body>
+</html>
